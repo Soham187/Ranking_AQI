@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirIQ</title>
+
+    <!-- Material Icons and Bootstrap -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="AQcss.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="main container-fluid mt-4">
+        <h1 class="text-center mb-4" id="top_tag">Check Air Quality Around the World</h1>
+
+        <!-- AQI Options -->
+        <div class="btn-group my-3 d-flex justify-content-center" role="group" aria-label="AQI Options">
+            <button id="btnBest" class="btn btn-success btn-lg">Best AQI Cities</button>
+            <button id="btnWorst" class="btn btn-danger btn-lg ml-2">Worst AQI Cities</button>
+        </div>
+
+        <!-- Search Input Group -->
+        <div class="search input-group mb-4 d-flex justify-content-center">
+           
+            
+        </div> 
+
+        
+        <!-- Table for AQI Results -->
+        <div id="content" class="text-center">
+            <table id="aqiTable" class="table table-striped table-bordered" style="display: none; margin: 0 auto;">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>City</th>
+                        <th>Country</th>
+                        <th>AQI</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+   
+
+    <!-- Script to fetch and display AQI -->
+    <script src="./AQ.js" type="module"></script>
+</body>
+
+</html>
